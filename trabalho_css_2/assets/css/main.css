@@ -1,0 +1,200 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans';
+  color: #23546d;
+  background: #eee;
+}
+
+#video {
+  width: 100%;
+  min-height: 100%;
+  position: fixed;
+  z-index: -999;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+.header {
+  background: #6293b8;
+  opacity: 0.8;
+  padding: 25px 50px;
+  position: fixed;
+  width: 100%;
+  max-width: 100%;
+}
+
+.header span {
+  display: inline-block;
+  font-size: 2em;
+  font-weight: 700;
+}
+
+.header navbar {
+  float: right;
+  margin-right: 100px;
+}
+
+.header navbar ul {
+  margin: 0;
+  padding: 0;
+}
+
+.header navbar ul li {
+  margin: 0;
+  padding: 15px;
+  display: inline-block;
+}
+
+.header navbar ul li a {
+  color: #23546d;
+  text-decoration: none;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.header navbar ul li a:hover {
+  color: #7d7f76;
+}
+
+.header navbar ul li a:active, .header navbar ul li a:focus {
+  border: none;
+  outline: none;
+}
+
+.footer {
+  position: fixed;
+  opacity: 0.8;
+  bottom: 0;
+  background: #6293b8;
+  width: 100%;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+#container {
+  position: absolute;
+  left: 25%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+#container p {
+  color: white;
+  font-size: 1.7em;
+  font-weight: 700;
+}
+
+#container p:nth-child(2) {
+  -webkit-transform: translateX(10%);
+          transform: translateX(10%);
+}
+
+#container p span {
+  color: #1064a5;
+  font-size: 1.1em;
+}
+
+#hotel-container {
+  margin-top: 100px;
+  width: 50%;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#hotel-container img {
+  width: 500px;
+}
+
+#hotel-container p {
+  clear: both;
+}
+
+#quartos-container {
+  margin-top: 100px;
+  width: 50%;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#quartos-container img {
+  width: 500px;
+}
+
+#quartos-container p {
+  clear: both;
+}
+
+#reserva-container {
+  margin-top: 100px;
+  width: 50%;
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+#reserva-container img {
+  width: 500px;
+}
+
+#reserva-container p {
+  clear: both;
+}
+
+#reserva-container .form-container {
+  position: relative;
+  border: 2px solid #7d7f76;
+  max-width: 400px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  border-radius: 15px;
+}
+
+#reserva-container .form-container .form-input {
+  margin: 15px 0px;
+}
+
+#reserva-container .form-container .form-input input[type="text"], #reserva-container .form-container .form-input input[type="email"], #reserva-container .form-container .form-input input[type="number"] {
+  width: 300px;
+}
+
+#reserva-container .form-container .form-input input[type="submit"], #reserva-container .form-container .form-input input[type="reset"] {
+  background: #6293b8;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.75em;
+  cursor: pointer;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+#reserva-container .form-container .form-input input[type="submit"]:hover {
+  background: #427976;
+}
+
+#reserva-container .form-container .form-input input[type="reset"]:hover {
+  background: #c0392b;
+}
+/*# sourceMappingURL=main.css.map */

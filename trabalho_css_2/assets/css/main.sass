@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700')
+
+$bgColor: #6293b8
+$textColor: #23546d
+
+html, body
+    margin: 0
+    padding: 0
+    font-family: 'Open Sans'
+    color: $textColor
+    background: #eee
+
+#video
+    width: 100%
+    min-height: 100%
+    position: fixed
+    z-index: -999
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    overflow: hidden
+
+.header
+    background: $bgColor
+    opacity: 0.8
+    padding: 25px 50px
+    position: fixed
+    width: 100%
+    max-width: 100%
+
+    span
+        display: inline-block
+        font-size: 2em
+        font-weight: 700
+
+    navbar
+        float: right
+        margin-right: 100px
+
+        ul
+            margin: 0
+            padding: 0
+            
+            li
+                margin: 0
+                padding: 15px
+                display: inline-block
+
+                a
+                    color: $textColor
+                    text-decoration: none
+                    font-weight: 700
+                    text-transform: uppercase
+                    transition: all 0.5s
+                    
+                    &:hover
+                        color: #7d7f76
+                    &:active, &:focus
+                        border: none
+                        outline: none
+
+.footer
+    position: fixed
+    opacity: 0.8
+    bottom: 0
+    background: $bgColor
+    width: 100%
+    text-align: center
+    font-size: 0.8em
+    font-weight: 700
+    overflow: hidden
+
+#container
+    position: absolute
+    left: 25%
+    top: 50%
+    transform: translate(-50%, -50%)
+
+    p
+        color: white
+        font-size: 1.7em
+        font-weight: 700
+        &:nth-child(2)
+            transform: translateX(10%)
+        
+        span
+            color: #1064a5
+            font-size: 1.1em
+
+#hotel-container
+    margin-top: 100px
+    width: 50%
+    position: absolute
+    text-align: center
+    left: 50%
+    transform: translateX(-50%)
+    img
+        width: 500px
+    p
+        clear: both
+
+#quartos-container
+    margin-top: 100px
+    width: 50%
+    position: absolute
+    text-align: center
+    left: 50%
+    transform: translateX(-50%)
+    img
+        width: 500px
+    p
+        clear: both
+
+#reserva-container
+    margin-top: 100px
+    width: 50%
+    position: absolute
+    text-align: center
+    left: 50%
+    transform: translateX(-50%)
+    img
+        width: 500px
+    p
+        clear: both
+    
+    .form-container
+        position: relative
+        border: 2px solid #7d7f76
+        max-width: 400px
+        left: 50%
+        transform: translateX(-50%)
+        border-radius: 15px
+
+        .form-input
+            margin: 15px 0px
+            input[type="text"], input[type="email"], input[type="number"]
+                width: 300px
+            input[type="submit"], input[type="reset"]
+                background: $bgColor
+                padding: 10px
+                border-radius: 5px
+                border: none
+                color: white
+                font-weight: 700
+                text-transform: uppercase
+                font-size: 0.75em
+                cursor: pointer
+                transition: all 0.2s
+
+            input[type="submit"]:hover
+                background: #427976
+            input[type="reset"]:hover
+                background: #c0392b
