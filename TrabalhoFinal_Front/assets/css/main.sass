@@ -27,6 +27,9 @@ body
         margin-left: 15px
         padding: 0
 
+    img
+        max-height: 45px
+        margin-left: 15px
     navbar
         margin-right: 15px
         padding: 0
@@ -52,22 +55,26 @@ body
     align-self: stretch
     flex-direction: column
     align-items: center
+    p
+        max-width: 500px
+        background: white
+    img
+        max-height: 200px
 
-.card1, .card2, .card3 
+.card 
     display: flex
     flex-direction: column
     max-width: 470px
     
-    span
-        
-        background: #ccc
-        margin: 0
-        position: relative
-        width: 100%
     img
         max-height: 50vh
         margin: 0
         position: relative
+    span
+        background: #000
+        color: white
+        font-weight: 700
+        width: 100%
 
 .footer
     background: $menuColor
@@ -77,3 +84,47 @@ body
     justify-content: center
     font-size: 0.95em
     align-self: flex-end
+
+.form_container
+    max-width: 400px
+    form
+        display: flex
+        flex-direction: column
+        align-items: center
+        input[type=submit]
+            padding: 10px
+            border: none
+            border-radius: 3px
+            background: $menuColor
+            font-weight: 700
+            transition: 0.2s all linear
+            cursor: pointer
+            margin-top: 15px
+            &:hover
+                background: darken($menuColor, 25%)
+
+.cardapio
+    display: flex
+    justify-content: space-around
+    padding: 20px
+    flex-grow: 1
+    align-self: center
+    flex-direction: row
+    align-items: center
+    flex-wrap: wrap
+    max-width: 80vw
+
+.prato
+    display: flex
+    flex-direction: column
+    max-width: 200px
+    
+    img
+        max-height: 150px
+        margin: 0
+        position: relative
+    span
+        background: #000
+        color: white
+        font-weight: 700
+        width: 100%

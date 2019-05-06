@@ -40,6 +40,11 @@ body {
   padding: 0;
 }
 
+.header img {
+  max-height: 45px;
+  margin-left: 15px;
+}
+
 .header navbar {
   margin-right: 15px;
   padding: 0;
@@ -86,7 +91,16 @@ body {
           align-items: center;
 }
 
-.card1, .card2, .card3 {
+.container p {
+  max-width: 500px;
+  background: white;
+}
+
+.container img {
+  max-height: 200px;
+}
+
+.card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -97,17 +111,17 @@ body {
   max-width: 470px;
 }
 
-.card1 span, .card2 span, .card3 span {
-  background: #ccc;
-  margin: 0;
-  position: relative;
-  width: 100%;
-}
-
-.card1 img, .card2 img, .card3 img {
+.card img {
   max-height: 50vh;
   margin: 0;
   position: relative;
+}
+
+.card span {
+  background: #000;
+  color: white;
+  font-weight: 700;
+  width: 100%;
 }
 
 .footer {
@@ -123,5 +137,86 @@ body {
   font-size: 0.95em;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+.form_container {
+  max-width: 400px;
+}
+
+.form_container form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.form_container form input[type=submit] {
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background: #aceb98;
+  font-weight: 700;
+  -webkit-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.form_container form input[type=submit]:hover {
+  background: #56d62d;
+}
+
+.cardapio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 20px;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 80vw;
+}
+
+.prato {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-width: 200px;
+}
+
+.prato img {
+  max-height: 150px;
+  margin: 0;
+  position: relative;
+}
+
+.prato span {
+  background: #000;
+  color: white;
+  font-weight: 700;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
