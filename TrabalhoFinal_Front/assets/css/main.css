@@ -169,7 +169,7 @@ body {
 }
 
 .form_container form input[type=submit]:hover {
-  background: #56d62d;
+  background: #78df58;
 }
 
 .cardapio {
@@ -219,5 +219,21 @@ body {
   color: white;
   font-weight: 700;
   width: 100%;
+}
+
+.botao {
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background: #aceb98;
+  font-weight: 700;
+  -webkit-transition: 0.2s all linear;
+  transition: 0.2s all linear;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.botao:hover {
+  background: #78df58;
 }
 /*# sourceMappingURL=main.css.map */
